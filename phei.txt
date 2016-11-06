@@ -1,0 +1,594 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>电子工业出版社</title>
+<link href="/templates/css/style.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+p{margin:0;padding:0px; text-indent:24px;}
+-->
+</style>
+</head>
+
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="body_top_bg"><table width="982" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td class="bg_whlie">
+		  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+<td align="center">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="290" align="center" valign="top" class="pad_t17"><img src="/templates/images/logo.jpg" width="261" height="51" /></td>
+        <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="237" align="right" class="pad_r20 pad_t20"><script>
+function tick() {
+var hours, minutes, seconds, xfile;
+var intHours, intMinutes, intSeconds;
+var today, theday;
+today = new Date();
+function initArray(){
+this.length=initArray.arguments.length
+for(var i=0;i<this.length;i++)
+this[i+1]=initArray.arguments[i] }
+var d=new initArray(
+"星期日",
+"星期一",
+"星期二",
+"星期三",
+"星期四",
+"星期五",
+"星期六");
+//theday = today.getYear()+"年" + [today.getMonth()+1]+"月" +today.getDate() + d[today.getDay()+1];
+theday = today.getFullYear()+"年" + [today.getMonth()+1]+"月" +today.getDate() + d[today.getDay()+1];
+intHours = today.getHours();
+intMinutes = today.getMinutes();
+intSeconds = today.getSeconds();
+
+if (intHours == 0) {
+hours = "12:";
+xfile = "午夜";
+} else if (intHours < 12) {
+hours = intHours+":";
+xfile = "上午";
+} else if (intHours == 12) {
+hours = "12:";
+xfile = "正午";
+} else {
+intHours = intHours - 12;
+hours = intHours + ":";
+xfile = "下午";
+}
+if (intMinutes < 10) {
+minutes = "0"+intMinutes+":";
+} else {
+minutes = intMinutes+":";
+}
+if (intSeconds < 10) {
+seconds = "0"+intSeconds+" ";
+} else {
+seconds = intSeconds+" ";
+}
+timeString = theday+" "+xfile+" "+hours+minutes+seconds;
+document.getElementById("Clock").innerHTML = timeString;
+window.setTimeout("tick();", 100);
+}
+window.onload = tick;
+
+function getXmlHttpObject(){
+	var xmlHttp = null;
+	try{
+		//Firefox,Opera8.0+,Safari
+		xmlHttp = new XMLHttpRequest();
+	}catch(e){
+		//Internet Explorer
+		try{
+			xmlHttp = new ActiveXObject("Msxml2.XMLHTTP");
+		}catch(e){
+			xmlHttp = new ActiveXobject("Microsoft.XMLHTTP");
+		}
+	}
+	return xmlHttp;
+}
+
+function getloginoutText(url,o){
+	var temp = "";
+	xmlHttp = getXmlHttpObject();
+	if(xmlHttp==null){
+		alert('浏览器不支持ajax');
+	}
+	xmlHttp.onreadystatechange=stateChanged; 
+	xmlHttp.open("GET",url,true); 
+	xmlHttp.send(null); 
+		function stateChanged(){
+			if (xmlHttp.readyState==4){	
+			    temp =  xmlHttp.responseText;
+				var tempdiv = document.getElementById(o);
+				tempdiv.innerHTML = temp;
+			}
+		}
+}
+function seeloginout(str){
+	var url = "/module/membercenter/topajaxloginout.jsp?time="+new Date().getTime();;
+	getloginoutText(url,str);
+}
+</script>
+                <span id="Clock"></span></td>
+              <td width="467" class="pad_t20"><table width="100%" height="17" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td align="left" class="linef12b_blue hxjy_line bod_r_left"><ul>
+                        <li><a target="_bank" href="http://www.hxedu.com.cn">华信教育资源网</a></li>
+                        <li><a target="_bank" href="http://www.hxpress.com.cn">华信数字出版网</a></li>
+                        <li><a target="_bank" href="http://www.chinacomic.com.cn">中国动漫网</a></li>
+                      </ul></td>
+                    <td width="90" align="left" class="eng_lie linef12b_blue"><a target="_blank" href="/ens/index.shtml">ENGLISH</a></td>
+                  </tr>
+                </table></td>
+            </tr>
+          </table></td>
+          </tr>
+          <tr>
+            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td align="right">
+              <div class="div_buy_line">
+              <div id="Layer3" style="display:none;" onmouseout="showOutDivgwc()" onmousemove="showmoveDivgwc()"  class="zjxz_ys2 f12_grey" >
+</div>
+<div id="Layer4" style="display:none;" onmouseout="showOutDivzxjl()" onmousemove="showmoveDivzxjl()"  class="zjxz_ys2 f12_grey">
+
+<a href='tencent://message/?uin=2473231267&Menu=yes'>购书咨询</a><br/><hr/>
+
+<a href='tencent://message/?uin=1245913815&Menu=yes'>教学课件</a><br/><hr/>
+
+<a href='tencent://message/?uin=195132426&Menu=yes'>教材咨询</a><br/><hr/>
+
+
+</div>
+<div>
+              <table width="100%" height="38" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td width="250" align="right" class="f12_orange linkf12_orange">
+                    <!-- 这里是登陆注册 
+                    [<iframe src="/module/membercenter/membertoplogin.jsp" style="width:200px;overflow:hidden; border:0;" height="20" frameborder="0" scrolling="No"></iframe>]
+                    -->
+                    	<span id="loginout"></span>
+                    	<script type="text/javascript">
+                    	setTimeout("seeloginout('loginout')",500) ;
+                    	</script></td>
+                    <td width="80" align="right" class="gwc_line linkf12_wryh"><a href="/module/goods/shoppingcart.jsp" onmousemove="showgwc()" onmouseout="showoutgwc()">购物车</a></td>
+                    <td width="86" align="right" class="hyzx_line linkf12_wryh"><a href="/module/membercenter/hyzx.jsp">会员中心</a></td>
+                    <td width="90" align="right" class="zxzx_line linkf12_wryh"><a href="#" onmousemove="showzxjl()" onmouseout="showoutzxjl()">在线咨询</a></td>
+                    <td width="16" align="right"><img src="/templates/images/zxzx_h_line.jpg" width="11" height="9" /></td>
+                    <td width="86" align="right" class="wzdl_line linkf12_wryh"><a href="/wzdh/index.shtml">网站导航</a></td>
+					<td align="right" width="86" class="linkf12_wryh pad_r10 sj_line"><a href="http://wap.phei.com.cn" target="_blank">手机PHEI</a></td>
+                  </tr>
+                </table>
+				</div>
+               </div> 
+              </td>
+            </tr>
+          </table></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table>
+<script language="javascript">
+	function showgwc(){
+		getgwcajax();
+		document.getElementById("Layer3").style.display="block";
+	}
+	function showoutgwc(){
+		document.getElementById("Layer3").style.display="none";
+	}
+	function showmoveDivgwc(){
+	  //getgwcajax();
+	  document.getElementById("Layer3").style.display="block";
+	}
+	function showOutDivgwc(){
+	document.getElementById("Layer3").style.display="none";
+	}
+	//在线咨询
+	function showzxjl(){
+		//getzxzxajax();
+		document.getElementById("Layer4").style.display="block";
+	}
+	function showoutzxjl(){
+		document.getElementById("Layer4").style.display="none";
+	}
+	function showmoveDivzxjl(){
+		//getzxzxajax();
+		document.getElementById("Layer4").style.display="block";
+	}
+	function showOutDivzxjl(){
+		document.getElementById("Layer4").style.display="none";
+	}
+	
+	function getzxzxajax(){
+
+	var url = "/module/goods/manager/GetZxzx.jsp?time="+new Date().getTime();
+	var str="Layer4";
+	//getAjaxZxzx(url,str);
+}
+function getAjaxZxzx(url,o){
+	var temp = "";
+	xmlHttp = getXmlHttpObject();
+	if(xmlHttp==null){
+		alert('不支持ajax');
+	}
+	xmlHttp.onreadystatechange=stateChanged; 
+	xmlHttp.open("GET",url,true); 
+	xmlHttp.send(null); 
+	function stateChanged(){
+		if (xmlHttp.readyState==4){	
+			if(o=="Layer4"){
+			 var t1 = "";
+			 var temp1 =  xmlHttp.responseText;
+			 
+						t1 = temp1;
+				//	alert(t1);
+				var tempdiv = document.getElementById(o);
+				tempdiv.innerHTML = t1;
+				
+			}
+		}
+	}
+}
+
+function getAjaxGwc(url,o){
+	var temp = "";
+	xmlHttp = getXmlHttpObject();
+	if(xmlHttp==null){
+		alert('不支持ajax');
+	}
+	xmlHttp.onreadystatechange=stateChanged; 
+	xmlHttp.open("GET",url,true); 
+	xmlHttp.send(null); 
+	function stateChanged(){
+		if (xmlHttp.readyState==4){	
+			if(o=="Layer3"){
+			 var t1 = "";
+			 var temp1 =  xmlHttp.responseText;
+			 
+						t1 = temp1;
+				
+				var tempdiv = document.getElementById(o);
+				tempdiv.innerHTML = t1;     
+			}
+		}
+	}
+}
+
+function getgwcajax(){
+
+	var url = "/module/goods/manager/GetGwc.jsp?time="+new Date().getTime();
+	var str="Layer3";
+	getAjaxGwc(url,str);
+}
+</script>
+</td>
+</tr>
+
+       </table>
+		<table width="982" border="0" cellspacing="0" cellpadding="0">
+ 
+	  <tr>
+    <td align="center" class="pad_t7">
+	<table width="962" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+  <td align="center" class="pad_t7">
+    <table width="962" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td align="left" class="nav"><ul id="topNav">
+            <li class="sy"><a href="/">首页</a></li>
+            <li class="nav_qt"><a href="/gywm/index.shtml">关于我社</a></li>
+            <li class="nav_qt"><a href="/module/goods/wssd_index.jsp">网上书店</a></li>
+            <li class="nav_qt"><a href="/module/dealer/jxs_home_before.jsp">经销商园地</a></li>
+            <li class="nav_qt"><a href="/module/contribution/wstg_index.jsp">网上投稿</a></li>
+			<!--
+            <li class="nav_qt"><a href="/module/goods/tslz_index.jsp">在线读书</a></li>
+			-->
+			<li class="nav_qt"><a target="_bank" href="http://drm.hxpress.com.cn">在线读书</a></li>
+            <li class="nav_qt"><a href="/module/zygl/zxzyindex.jsp">在线资源</a></li>
+            <li class="nav_qt"><a target="_bank" href="http://drm.hxpress.com.cn">电子书</a></li>
+		<li class="nav_qt"><a  href="/module/zpgl/jobappview.jsp">人才招聘</a></li>
+            <li class="lt"><a  href="/wzbz/lyb.shtml">留言板</a></li>
+          </ul>
+      </td>
+		 <script language="javascript">
+		var oDiv = document.getElementById("topNav");
+		var oLis = oDiv.getElementsByTagName("li");
+		var curhref = document.location.href;
+		if(curhref.indexOf("/gywm/")>0){
+			oLis[1].className="nav_qt2";
+		}
+		if(curhref.indexOf("/module/goods/")>0 && curhref.indexOf("/module/goods/tslz_")<0){
+			oLis[2].className="nav_qt2";
+		}
+		if(curhref.indexOf("/module/dealer/")>0){
+			oLis[3].className="nav_qt2";
+		}
+		if(curhref.indexOf("/module/contribution/")>0){
+			oLis[4].className="nav_qt2";
+		}
+		if(curhref.indexOf("/module/goods/tslz_")>0){
+			oLis[5].className="nav_qt2";
+		}
+		if(curhref.indexOf("/module/zygl/")>0){
+			oLis[6].className="nav_qt2";
+		}
+		if(curhref.indexOf("/module/dzsgl/")>0){
+			oLis[7].className="nav_qt2";
+		}
+
+		//alert(curhref);
+		</script>
+      </tr>
+    </table></td>
+</tr>
+
+      <tr>
+        <td class="pad_t1">
+		<table width="100%" height="30" border="0" cellpadding="0" cellspacing="0" class="bod_all_blue search_bg">
+           <tr>
+        <td class="pad_t1">
+		<script type="text/javascript">
+			function searchsub(){
+				var search_key = document.getElementById("searchKey");
+				if(search_key.value=='请输入书名、书号、作者等关键词'||search_key.value==""){
+					alert("请输入关键字查询");
+				}else{
+					searchform.submit();
+				}
+			}
+		</script>
+
+<script language="javascript">
+       //创建XMLHttpReques对象
+       function createXMLHttpRequest() {
+          if (window.XMLHttpRequest) {
+               //Mozilla 浏览器 
+               XMLHttpReq = new XMLHttpRequest();
+            } else{
+                // IE浏览器
+                if (window.ActiveXObject) {
+                  try {
+                         XMLHttpReq = new ActiveXObject("Msxml2.XMLHTTP");
+                      }catch (e) {
+                         try {
+                                XMLHttpReq = new ActiveXObject("Microsoft.XMLHTTP");
+                             }catch (e) { }
+                      }
+                 }
+            }
+        } 
+       //处理服务器响应结果
+       function handleResponse() {
+        // 判断对象状态
+        if (XMLHttpReq.readyState == 4) { 
+            // 信息已经成功返回，开始处理信息
+           if (XMLHttpReq.status == 200) { 
+                clearTable();
+                var out = "";
+                var res = XMLHttpReq.responseXML;
+				//alert("res="+res);
+				
+                var items = res.getElementsByTagName("item");
+				//alert("items="+items.length);
+				
+				//alert("adassssssss=>>>>="+items[0].firstChild.nodeValue);
+                for(var i=0;i<items.length;i++)
+                {
+                   //addRow(items(i).firstChild.nodeValue);
+				   addRow(items[i].firstChild.nodeValue);
+                }
+                setDivStyle();
+             }
+         }
+       }
+       //清除表格中的结果
+       function clearTable()
+       {
+           var content = document.getElementById("content");
+           while(content.childNodes.length>0)
+           {
+               content.removeChild(content.childNodes[0]);
+           }    
+           
+       }
+       //向输入提示的表格中添加一行记录   
+       function addRow(item)
+       {	
+           var content = document.getElementById("content");
+           var row = document.createElement("tr");
+           var cell = document.createElement("td");
+           cell.appendChild(document.createTextNode(item));
+           cell.onmouseover = function(){this.style.background="#97D0EC"};
+           cell.onmouseout = function(){this.style.background="#EEF8FD"};
+           cell.onclick = function(){
+           document.getElementById("searchKey").value=this.innerHTML;
+           document.getElementById("suggest").style.visibility="hidden"};
+           row.appendChild(cell);
+           content.appendChild(row);
+           
+       }
+      //发送客户端的请求
+      function sendRequest(url) {
+            createXMLHttpRequest();
+            XMLHttpReq.open("GET", url, true);
+            //指定响应函数
+            XMLHttpReq.onreadystatechange = handleResponse;
+            // 发送请求
+            XMLHttpReq.send(null); 
+       }   
+       //调用Ajax自动提示功能    
+       function suggest()
+       {
+            var key = document.getElementById("searchKey").value;
+			var newstr = encodeURIComponent(key);
+            sendRequest("/module/goods/searchajax.jsp?searchKey="+newstr);
+       }
+       
+       //设置输入提示框的位置和风格
+      function setDivStyle()
+        {
+           var suggest = document.getElementById("suggest");
+            suggest.style.border = "#CCE0EB 1px solid";
+            //suggest.style.left = 213;
+            //suggest.style.top = 140;
+           //suggest.style.width = 195;
+            //suggest.style.backgroundColor = "#EEF8FD"
+            document.getElementById("suggest").style.visibility="visible"
+      }
+	   function searchhidden(){
+	   	document.getElementById("suggest").style.visibility="hidden";
+	   }
+     </script>
+
+		<form name="searchform" method="post" action="/module/goods/searchkey.jsp"><table width="100%" height="30" border="0" cellpadding="0" cellspacing="0" class="bod_all_blue search_bg">
+            <tr>
+              <td width="126" align="right" class="search_line">图书搜索：</td>
+              <td width="203" align="left">
+			  <div style="position:relative; left:0;top:0; height:30px; width:203px;">
+			  <div style="position:absolute; left:0px; top:0px; width:195px;height:30px;"><input name="searchKey" id="searchKey" type="text" class="wb_ys" value="请输入书名、书号、作者等关键词"  onfocus="if(this.value=='请输入书名、书号、作者等关键词'){this.value='';}" onkeyup="suggest()" style="height:24px;line-height:24px;text-align:left;"/></div>
+			  <div id="suggest" style="position:absolute; left:0px; top:26px; width:195px;"><table style="background:#EEF8FD;">
+											         <tbody id="content" style="line-height:22px; background:#EEF8FD; border-bottom:2px #f00 solid;"></tbody>
+											      </table></div>
+			  </div>
+			  
+								            
+              </td>
+              <td width="54" align="left"><img onclick="searchsub()" src="/templates/images/but_search.jpg" width="48" height="19" border="0" /></td>
+              <td width="91" align="left"><a href="/module/goods/gjsearch.jsp" target="_blank"><img src="/templates/images/but_gjss.jpg" width="68" height="19" border="0" /></a></td>
+              <td width="277" align="left" class="f12_orange linkf12_orange"><span class="f14b_grey">热搜关键字：</span><a href='http://www.phei.com.cn/module/zygl/zxzyindex.jsp'><font color=#FF0000><strong>财经法规模拟卷勘误表</strong></font></a>&nbsp;</td>
+              <td width="85" align="left" class="wswz_line f12_black"><a href="/lxwm/2010-11-24/74.shtml">我社位置</a></td>
+            <td align="left" class="sjxz_line f12_black"><a href="/module/zygl/moreresourcelist.jsp?sort=Marc%E6%95%B0%E6%8D%AE">MARC数据下载</a></td>
+            </tr>
+          </table></form></td>
+      </tr>
+ 
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" class="pad_t10"><table width="960" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td align="left" valign="top" class="line_h26 f12_black dq_line bod_bot_grey3">当前位置：<a href="/">首页</a>&nbsp;><a href="/module/dealer/jxs_home_before.jsp" class="">经销商园地</a> > &nbsp;&nbsp;<span class="f12_blue1">帮助</span></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top" class="pad_t10"><table width="100%" border="0" cellspacing="0" cellpadding="0" class="cent_bg">
+          <tr>
+            <td width="261" align="center" valign="top" class="bod_top_blue5 bod_bot_blue2"><table width="259" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+			   <td class="gyws_bg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                 <tr>
+                <td align="left" class="f14b_blue gyws_line">帮助中心</td>
+              </tr>
+               </table></td>
+			  </tr>
+              <tr>
+                <td align="left"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+				 <!--EHM_SystemNav?pcid=106&showlocation=0-->
+                  <tr>
+                    <td align="left" class="line1_h30 bod_grey_bot linkf12_blue1 gyws_ej_line"><a href="/bzzx/cjrdwt/index.shtml">常见热点问题</a></td>
+                  </tr>
+                
+                  <tr>
+                    <td align="left" class="line1_h30 bod_grey_bot linkf12_blue1 gyws_ej_line"><a href="/bzzx/zhmm/index.shtml">找回密码</a></td>
+                  </tr>
+                
+                  <tr>
+                    <td align="left" class="line1_h30 bod_grey_bot linkf12_blue1 gyws_ej_line"><a href="/bzzx/gkjy/index.shtml">顾客建议</a></td>
+                  </tr>
+                <!--/EHM_SystemNav-->
+                </table></td>
+              </tr>
+            </table></td>
+            <td width="10" valign="top">&nbsp;</td>
+            <td width="689" height="400" align="center" valign="top" class="bod_top_blue"><table width="667" border="0" cellspacing="0" cellpadding="0">
+			
+              <tr>
+                <td align="left" valign="top" class="line_nr pad_t15 f14_blue_nr bod_bot_grey3 pad_bot7">常见热点问题</td>
+              </tr>
+              <tr>
+                <td align="left" valign="top" class="line_h31 f12_grey pad_t20 pad_left5 pad_bot20">
+				<TABLE border=0 width="100%" align=center><TBODY><TR><TD>一、了解PHEI网站</TD></TR><TR>
+				  <TD><P><B>订单前要注册成会员吗，注册会员是免费的吗、需要承担什么？</B></P>
+				    <P>答：下订单前要注册成为会员，主要是为了在以后的购买过程中可以节省时间，不必每次输入地址、电话等个人信息，并可以享受到我们对于注册会员的优惠价格和不定期举办的会员活动等；注册会员是免费的，不需要承担会费等任何负担。</P>
+				    <P><STRONG>如何进行在线注册?</STRONG></P>
+				    <P>答：进入PHEI网站，点击网站头部''注册''链接，输入您的用户名，设定密码，输入您的邮箱地址即可。如果您选择的用户名与已注册会员相同，将会提示“用户名重复”，您需要重新选择一个用户名。&nbsp;</P>
+				    <P><STRONG>如何查找我需要的书籍？</STRONG></P>
+				    <P>答：在网站每个页面的上方有个“搜索”框，在里面输入您要查找的商品名称，然后点击“搜索”按钮即可查到相关商品。同时您也可以点击“高级搜索”按钮，进行字段组合查询，使查询结果更为精确。</P>
+				    <P><STRONG>为什么输入商品名称后通过检索找不出我需购买的商品？</STRONG></P>
+				    <P>答：这说明您检索的商品可能已经报废或者还未上架，您可以通过减少关键字输入来进行查询。</P>
+				    <P><STRONG>如何在线订购？</STRONG></P>
+				    <P target="_blank">答：请参考<A href="/xssl/gszn/2011-07-28/336.shtml">购书指南</A>。</P>
+				    <P><STRONG>是否可以提供发票？</STRONG></P>
+				    <P>答：我们对销售的所有商品，都可以随货提供正式发票。请您在订单提交页面中的“是否需要发票”选项中选择“是”并填写发票抬头。</P>
+				    <P><STRONG>我如何了解订单的处理状态？</STRONG></P>
+				    <P>答：您如果需要了解订单的处理状态，可以登陆会员中心，点击“我的订单”，您就可以看到您订购过的所有订单，包括订单号码、订单 金额、订购时间，当您点击订单号码后，您可以看到该订单的订购明细及发货情况。</P>
+				    <P><STRONG>如何更改订单的付款方式？</STRONG></P>
+				    <P>答：一旦您的订单被确认,我们将无法更改您的付款方式。如需更改,您可以拨打我们的热线电话010-88254888进行咨询，您需提供您的订单号码和电子邮箱地址，以便我们确认您的身份。<STRONG> </STRONG></P>
+				    <P><STRONG>忘记密码怎么办? &nbsp;</STRONG></P>
+				    <P>答：请在登录的页面点击“忘记密码”。然后，提供您注册的E-mail地址，我们的系统将把您的注册密码发送至您的邮箱。</P>
+				    <P><STRONG>刚下的订单，想取消怎么办?&nbsp;</STRONG></P>
+				    <P>答：订单状态随时在网上查询。事实上，对所有的订单我们都会迅速处理。您可以通过E-mail或电话与我们的顾客服务中心联系，我们将协助您查询是否可以修改或取消全部或部分项目，与我们联系时请务必告知您的订单号及用户名。</P>
+				    <P><STRONG>所要的图书没货，不过已经付款了怎么办？</STRONG>&nbsp;</P>
+				    <P>答：我们在确认您所购图书无货的情况下将以邮件形式通知您，按照您所选择的退款方式安排退款。</P>
+				    <P><STRONG>由于邮局汇款方式比较麻烦，能够一次多汇点钱款用于今后购买图书吗?&nbsp;</STRONG></P>
+			      <P>答：当然可以。在此，我们感谢您对我们的信任。当您再次通过PHEI网站进行购书时，系统会自动减去您账户中的资金余额，您只需要支付余下金额即可。</P></TD></TR><TR></TR><TR></TR><TR></TR></TBODY></TABLE></td>
+              </tr>
+			   
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+
+  <tr>
+    <td align="center"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      
+     <tr>
+  <td align="center"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td align="center"><table width="960" border="0" cellspacing="0" cellpadding="0" class="mar_t10">
+            <tr>
+              <td align="center" class="bot_nav_bg linkf12_whlie f12_whlie"><a href="/qkjs/2011-12-12/435.shtml">期刊介绍</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/lxwm/2010-11-24/74.shtml">联系我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/module/zpgl/jobappview.jsp">人才招聘</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://wap.phei.com.cn" target="_blank">手机PHEI</a>|&nbsp;&nbsp;<a href="http://e.weibo.com/dzgy" target="_blank">官方微博</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/wzdh/index.shtml">网站导航</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/wzbz/2010-12-23/177.shtml">网站帮助</a></td>
+            </tr>
+          </table></td>
+      </tr>
+    </table></td>
+</tr>
+<tr>
+  <td align="left" class="pad_t15 pad_bot20"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td align="center" class="line_h21">电子工业出版社地址：北京市万寿路南口金家村288号 华信大厦&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;服务电话：010-88258888 88254114</td>
+      </tr>
+      <tr>
+        <td align="center" class="f12_black line_h21"><a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备11030724</a>&nbsp;&nbsp;Copyright 2006-2012&nbsp;<span class="f12b_black">电子工业出版社</span>&nbsp;&nbsp;All rights reserved</td>
+      </tr>
+       <tr>
+        <td align="center" class="f12_black line_h21">出版物经营许可证：<a href="http://www.phei.com.cn/jyxkz.jpg" target="_blank">新出发京批字第版130001号</a></td>
+      </tr>
+    </table></td>
+</tr>
+
+
+</table>
+		</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+
+
+<map name="Map" id="Map"><area shape="rect" coords="113,32,202,113" href="#" /><area shape="rect" coords="218,31,307,113" href="#" /><area shape="rect" coords="321,30,415,112" href="#" /><area shape="rect" coords="427,31,519,112" href="#" /></map></body>
+</html>
